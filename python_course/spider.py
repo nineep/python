@@ -30,4 +30,3 @@ for cur_page in range(1, int(preview_page_cnt)+1):
 			f.close()
 		os.chdir(cur_path)
 print('download finished')
-
