@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #记录一些总结、个人理解
 
 本书讲解对象的思路：
@@ -63,4 +64,26 @@ pass语句
 
 
 func(positional_args, keyword_args, *tuple_grp_nonkw_args, **dict_grp_kw_args)
+
+
+类：对象的定义
+实例：真正的实物，存放类中所定义的对象的具体信息
+方法：类的功能
+
+python使用类的方法（功能），加工对象，然后产生实例？
+class MyDataWithMethod(object): #定义类
+    def printFoo(self):         #定义方法
+        print 'You invoked printFoo()!'
+muObj = MyDataWithMethod()      #创建实例
+myObj.printFoo()                #调用方法
+
+class AddrBookEntry(object):    #类定义（创建一个类）
+    'address bool entry class'
+    def __int__(self, nm, ph):  #定义构造器
+        self.name = nm          #设置name
+        self.phone = ph         #设置phone
+        print 'Created instance for:', self.name
+    def updatePhone(self, newph):   #定义方法
+        self.phone = newph
+        print 'Update phone# for:', self.name
 

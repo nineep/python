@@ -61,4 +61,40 @@ def map(func, seq):
     return mapped_seq
 map ((lambda x: x+2), [0, 1, 2, 3, 4, 5])
 
+from cli4ovf import import cli4ovf
+#command line interface utility function
+def cli_util():
+    pass
+#overly massive handlers for the command line interface
+def omh4cli():
+    :
+    cli4ovf()
+    :
+    omh4cli()
+
+class AddrBookEntry(object):
+    'address book entry class'
+    def __init__(self, nm, ph):
+        self.name = nm
+        self.phone = ph
+        print 'Created instance fo:', self.name
+    def updatePhone(self, newph):
+        self.phone = newph
+        print 'Updated phone# for:', self.name
+
+john = AddrBookEntry('Hohn Doe', '408-555-1212')
+jane = AddrBookEntry('Jane Doe', '650-555-1212')
+
+class EmplAddrBookEntry(AddrBookEntry):
+    'Employee Address Book Entry class'
+    def __init__(self, nm, ph, id, em):
+        AddrBookEntry.__init__(self, nm, ph)
+        self.empid = id
+        self.email = em
+
+    def updateEmail(self, newem):
+        self.email = newem
+        print 'Update e-mail address for:', self.name
+
+John = EmplAddrBookEntry('John Doe', '408-555-1212', 42, 'john@spam.doe')
 
