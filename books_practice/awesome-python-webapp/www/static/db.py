@@ -15,7 +15,7 @@ class _DbCtx(threading.local):
         self.connection = None
         self.transcations = 0
 
-    def is _init(self):
+    def is_init(self):
         return not self.connection is None
 
     def init(self):
@@ -31,10 +31,12 @@ class _DbCtx(threading.local):
 
 _db_ctx = _DbCtx()
 
+#定义了__enter__()和__exit__()的对象可以用于with语句，
+#确保任何情况下__exit__()方法可以被调用
 class _ConnectionCtx(object):
     def __enter__(self):
         global _db_ctx
-        self/should_cleanup = False
+        self.should_cleanup = False
         if not _db_ctx.is_init():
             _db_ctx.init()
             self.should_cleanup = True
@@ -48,6 +50,7 @@ class _ConnectionCtx(object):
 def connection():
     return _ConnectionCtx()
 
+#事物嵌套
 class _TransactionCtx(object):
     def __enter__(self):
         global _de_ctx
