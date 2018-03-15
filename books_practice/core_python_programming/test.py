@@ -98,3 +98,27 @@ class EmplAddrBookEntry(AddrBookEntry):
 
 John = EmplAddrBookEntry('John Doe', '408-555-1212', 42, 'john@spam.doe')
 
+
+class NewAddrBookEntry(object):
+    'new address book entry class'
+    def __init__(self, nm, ph):
+        self.name = Name(nm)
+        self.phone = Phone(ph)
+        print 'Created instance for:', self.name
+
+class Parent(object):
+    def parentMethod(self):
+        print 'calling child method'
+
+class Child(Parent):
+    def childMethod(self):
+        print 'calling child method'
+
+class RoundFloat(float):
+    def __new__(cls, val):
+        return float.__new__(cls, round(val, 2))
+
+class RoundFloat(float):
+    def __new__(cls, val):
+        return super(RoundFloat, cls).__new__(cls, round(val, 2))
+
