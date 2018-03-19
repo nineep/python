@@ -87,3 +87,21 @@ class AddrBookEntry(object):    #类定义（创建一个类）
         self.phone = newph
         print 'Update phone# for:', self.name
 
+内建函数属性：
+bif.__doc__ 文档字符串（或None）
+bif.__name__ 字符串类型的文档名字
+bif.__self__ 设置为None（保留给内建方法）
+bif.__module__ 存放bif定义的模块名字（或None）
+
+class C(object): #定义类
+    def foo(self): pass #定义非对象方法
+
+c = C() #实例化
+type(C) #类的类别
+type(c) #实例的类别
+type(C.foo) #非绑定方法的类别
+type(c.foo) #绑定方法的类别
+C.foo #非绑定方法对象
+c.foo #绑定方法对象
+c #foo()实例被绑定到...
+

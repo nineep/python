@@ -122,3 +122,11 @@ class RoundFloat(float):
     def __new__(cls, val):
         return super(RoundFloat, cls).__new__(cls, round(val, 2))
 
+def foo(data):
+    if isinstance(data, int):
+        print 'you entered an integer'
+    elif isinstance(data, str):
+        print 'you entered a string'
+    else:
+        raise TypeError, 'only integers or strings!'
+
