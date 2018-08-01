@@ -245,10 +245,17 @@ class _TransactionCtx(object):
         logging.info('rollback ok.')
 
 def transaction():
-    '''
-    Create a transaction object so can use with statement:
-    
-    with transaction():
-        pass
+    return _TransactionCtx()
 
-    >>> def
+def with_transaction(func):
+
+    @functools.wraps(func)
+    def _wrapper(*args, **kw):
+        _start = time.time()
+        with _TransactionCtx():
+            return func(*args, **kw)
+        _profiling(_start)
+    return _wrapper
+
+def _select(
+
