@@ -122,6 +122,57 @@ cat extend.html
 <h1>Hello, World!</h1>
 {% endblock %}
 #flask-bootsrap: Twitter 的前端模板bootsrap
+flask-bootstrap base.html 定义的块
+doc
+html_attribs
+html
+head
+title
+metas
+styles
+body_attribs
+body
+navbar
+content
+scripts
+
+#flask-moment 本地化日期和时间
+#实现了 moment.js 中的 format(), fromNow(), fromTime(), calendar(), valueOf(), unix() 方法
+{{ moment.format() }}
+{{ moment.lang('es') }}
+
+#表单 form： flask-wtf
+#WTForms支持的HTML标准字段
+StingField
+TextField
+PasswordField
+HiddenField
+DateField
+IntegerField
+DecimalField
+FloatField
+BooleanFeld
+RadoFiield
+SelectFeld
+SelectMultipleField
+FileField
+SubmitField
+FormFeld
+FieldList
+#WTForms 验证函数
+Email
+EqualTo
+IPAddress
+Length
+NumberRange
+Optional
+Required
+Regexp
+URL
+AnyOf
+NoneOf
+
+
 
 
 

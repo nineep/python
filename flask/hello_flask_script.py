@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask
-from flask.ext.script import Manager
+from flask_script import Manager
 
 app = Flask(__name__)
 manager = Manager(app)
