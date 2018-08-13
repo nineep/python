@@ -1,3 +1,7 @@
+from functools import wraps
+from flask import g
+from .errors import forbidden
+
 
 @permission_required(permission):
     def decorator(f):
@@ -8,5 +12,4 @@
             return f(*args, **kwargs)
         return decorated_function
     return decorator
-
 
