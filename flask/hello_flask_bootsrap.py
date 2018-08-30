@@ -4,7 +4,7 @@
 from flask import Flask
 from flask.ext.script import Manager
 from flask import render_template
-from flask.ext.bootsrap import Bootstrap
+from flask.ext.bootstrap import Bootstrap
 
 
 app = Flask(__name__)
