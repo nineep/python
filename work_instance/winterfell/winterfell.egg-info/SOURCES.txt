@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.cfg
+setup.py
+winterfell/__init__.py
+winterfell/app.py
+winterfell/client.py
+winterfell/exception.py
+winterfell/hooks.py
+winterfell/i18n.py
+winterfell/ldap_client.py
+winterfell.egg-info/PKG-INFO
+winterfell.egg-info/SOURCES.txt
+winterfell.egg-info/dependency_links.txt
+winterfell.egg-info/not-zip-safe
+winterfell.egg-info/requires.txt
+winterfell.egg-info/top_level.txt

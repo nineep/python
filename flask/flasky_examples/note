@@ -1,0 +1,2 @@
+flask 0.10.1 支持 import flask.ext.script 这种导入
+flask 1.0.2  支持 import flask_script 这种导入
