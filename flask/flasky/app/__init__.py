@@ -1,3 +1,4 @@
+# 导入flask 和 flask插件的类
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_mail import Mail
@@ -5,8 +6,10 @@ from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_pagedown import PageDown
+# 导入配置模块
 from config import config
 
+# 创建实例
 bootstrap = Bootstrap()
 mail = Mail()
 moment = Moment()
@@ -16,6 +19,7 @@ pagedown = PageDown()
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
 
+# define boot app instance factory function
 def create_app(config_name):
     app = Flask(__name__)
     app.config.from_object(config[config_name])

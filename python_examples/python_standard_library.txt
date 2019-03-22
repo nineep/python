@@ -1,0 +1,318 @@
+python standard library
+
+built-in functions #内建函数
+built-in constants #内建常量
+built-in types  #内建类型
+built-in exceptions #内建异常
+
+string service #字符串级别的操作库
+    string common string oprations 通用的字符串操作
+    re  regular expression operations 正则表达式操作
+    struct interpret strings as packed binary data 字符串转换为二进制数据
+    difflib helpers for computing deltas 计算增量
+    StringIO    read and write strings as files 字符创转为文件
+    cStringIO   faster version of StringIO
+    textwrap    text wrapping and filling 文本封装和填充
+    codecs  codec registry and base classes 编解码器注册 和 基类
+    unicodedata unicode database unicode数据库
+    stringgrep internet string preparation 互联网字符串准备
+    fpformat floating point conversions 浮点数转换
+
+data types #数据类型操作库
+    datetime    基础的日期和时间类型
+    calendar    通用的日历相关的函数
+    collections 高性能容器数据类型
+    heapq  heap queue algorithm  堆队列算法
+    bisect array bisection algorithm 数组二分算法
+    array   efficient arrays of numeric values 高效的数值数组
+    sets    unordered collections of unique elements 唯一元素的无序集合
+    sched   event scheduler 事件调度
+    nutex   mutual exclusion support 相互排斥的支持
+    Queue   a synchronized queue class 同步的队列类
+    weakref weak references 弱引用
+    UserDict    class wrapper for dictionary objects 字典对象的 封装类
+    UserList    class wrapper for list objects 列表对象的封装类
+    UserString  class wrapper for string objects 字符串对象的封装类
+    types names for built-in types 内建类型的命名
+    new creation of runtime internal objects 创建运行时内部对象
+    copy    shallow and deep copy operations 浅拷贝和深拷贝操作
+    pprint  data pretty printer 优雅的数据打印器
+    repr    alternate repr() implementation repr()的改变实现
+
+numeric and mathematical modules #数字、数学模块
+    numbers numeric abstract base classes 数字抽象基类
+    math mathematical functions 数学方法
+    cmath mathmatical functions for complex numbers 复数的数学方法
+    decimal decimal fixed point and floating point arithmetic 十进制定点和浮点运算
+    fractions rational numbers 有理数
+    random  generate pseudo-random numbers 生成伪随机数
+    itertools functions creating iterators for efficient looping 创建高效循环的迭代器函数
+    functools higher-order functions and operations on callable objects 高阶函数 和 可调用对象操作
+    operator standard operators as functions 函数标准运算符
+
+file and directory access #文件目录的访问
+    os.path common pathname manipulations 通用的路径名操作
+    fileinput iterate over lines from multiple input streams 迭代来自多个输入流的行
+    stat interpreting stat() results 解释stat()结果
+    statvfs constants used with os.statvfs()
+    filecmp file and directory comparisons 文件和目录的比较
+    tempfile generate temporary files and directories 生成临时文件和目录
+    glob unix style pathname pattern expansion unix风格的路径名匹配
+    fnmatch unix filename pattern matching unix文件名模式匹配
+    linecache random access to text lines 随机访问文本行
+    shutil high-level file operations 高级文件操作
+    dircache cached directory listings 缓存的目录列表
+    macpath mac os 9 path manipulation functions
+
+data persistence #数据持久化
+    pickle python object serialization python对象序列化
+    cPickle a faster pickle
+    copy_reg register pickle support functions 注册pickle支持函数
+    shelve python object persistence python对象持久化
+    marshal  internal python object serialization 内部python对象的序列化
+    anydbm generic access to DBM-style databases 对DBM风格的数据库通用的访问
+    whichdb guess which DBM module created a database 找出数据库由哪个DBM模块创建
+    dbm simple database interface
+    gdbm gnu reinterpretation of dbm
+    dbhash DBM-style interface to the BSD database library
+    bsddb interface to berkeley DB library
+    dumbdbm portable DBM implementation
+    sqlite3 DB-API 2.0 interface for SQLite databases
+
+data compression and archiving  #数据压缩归档
+    zlib compression compatible with gzip
+    gzip support for gzip files
+    bz2 compression compatible with bzip2
+    zipfile work with ZIP archives
+    tarfile read and write tar archive files
+
+file formats #文件格式化
+    csv CSV file reading and writing 
+    ConfigParser configuration file parser 配置文件解析
+    robotparser parser for robots.txt
+    netrc netrc file processing
+    xdrlib
+    plistlib
+
+cryptographic services #加密服务
+    hashlib secure hashes and message digests 安全hash和消息摘要
+    hmac keyed-hashing for message authentication 
+    md5 MD5 message digest algorithm md5消息摘要算法
+    sha SHA-1 message digest algorithm sha1消息摘要算法
+
+generic operating system services  #通用的操作系统服务
+    os miscellaneous operating system interfaces 各种OS接口
+    io core tools for working with stream  工作流核心工具
+    time time access and conversions 时间访问和转换
+    argparse parser for command-line options, arguments and sub-commands 命令行选项、参数、子命令
+    optparse parser for command-line options
+    getopt c_style parser for command line opetions
+    logging logging facility for python 灵巧的日志工具
+    logging.config logging configuration
+    logging.handlers logging handlers
+    getpass portable password input 便携式密码输入
+    curses terminal handling for character-cell displays 字符单元展示 终端处理 
+    curses.textpad text input widget for curses programs 
+    curses.ascii
+    curses.panel
+    platform access to underlying platform's identifying data  访问底层平台的说明信息
+    errno
+    ctypes
+
+optional operating system services #可选的操作系统服务
+    select waiting for i/o completion 等待io结束
+    threading higher-level threading interface 高级线程接口
+    thread multiple threads of control 多线程控制
+    dummy_threading drop-in replacement for the threading module
+    dummy_thread drop-in replacement for the thread module
+    multiprocessing process-based 'threading' interface 基于threading接口的多进程
+    mmap memory-mapped file support 文件内存映射支持
+    readline gnu readline interface GNU readline 接口
+    rlcompleter completion function for gnu readline
+
+interprocess communication and networking  #进程间通信和网络
+    subprocess subprocess management 子进程管理
+    socket low-level networking interface  低级网络接口
+    ssl TLS/SSL wrapper for socket objects socket对象的TLS/SSL封装
+    signal set handlers for asynchronous events 为一步时间设置处理程序
+    popen2 subprocess with accessible I/O streams 可访问I/O流的子进程
+    asyncore asynchronous socket handler 异步socket处理
+    asynchat asynchronous socket command/response handler  异步socket命令、响应处理
+    
+internet data handling
+    email an email and MIME handling package 邮件和多用途互联网邮件扩展 操作包
+    json JSON encoder and decoder JSON编码解码
+    mailcap mailcap file handling mailcap文件操作
+    mailbox manipulate mailboxes in various formats 操作各种格式的邮箱
+    mhlib access to MH mailboxes 访问MH邮箱
+    mimetools tools for parsing MIME messages 解析MIME消息的工具
+    mimetypes map filenames to MIME types 文件名映射到MIMEtypes上
+    MimeWriter generic MIME file writer 通用的MIME文件编写器
+    mimify MIME processing of mail messages MIME处理邮件消息
+    multifile support for files containing distinct parts 支持包含不同部分的文件
+    rfc822 parse RFC 2822 mail headers
+    base64 RFC base16,base32,base64 data encodings base16,base32,base64数据编码
+    binhex encode and decode binhex4 files 编解码binhex4文件
+    binascii convert between binary and ascii 二进制和ASCII之间的转换
+    quopri encode and decode MIME quoted-printable data 对MIME可引用打印的数据编码解码
+    uu encode and decode uuencode files 编解码uuencode文件
+
+structured markup processing tools #结构化标记处理工具
+    HTMLParser simple HTML and XHTML parser
+    sgmlib simple SGML parser
+    htmllib a parser for HTML documents
+    htmlentitydefs definitions of HTML general entities
+    XML
+    xml.etree.ElementTree the elementtree XML API
+    xml.dom
+    xml.dom.minidom
+    xml.sax
+    xml.sax.handler
+    xml.sax.saxutils
+    xml.sax.xmlreader
+    xml.parsers.expat
+
+internet protocols and support
+    webbrowser convenient web-browser controller 方便的浏览器控制器
+    cgi common gateway interface support 通用网关接口支持
+    cgitb traceback manager for cgi scripts cgi脚本的追踪管理
+    wsgiref WSGI Utilities and reference implementation WSGI工具和参考实现
+    urllib  open arbitrary resources by url 通过url打开任意资源
+    urllib2 extensible library for opening URLs url的拓展库
+    httplib HTTP协议客户端
+    ftplib FTP协议客户端
+    poplib POP3协议客户端
+    imaplib IMAP4协议客户端
+    smtplib SMTP协议客户端
+    smtpd SMTP server
+    telnetlib telnet客户端
+    uuid UUID objects according to RFC 4122 UUID对象
+    urlparse parse url into components 解析URL为组件
+    SocketServer a framwork for network servers 网络服务器框架
+    BaseHTTPServer basic HTTP server 基础的HTTP服务器
+    simpleHTTPServer simple HTTP request handler 简单的HTTP请求操作
+    CGIHTTPServer CGI-capable HTTP request handler 支持CGI的HTTP请求操作
+    cookielib cookie handling for HTTP clients HTTP客户端cookie操作
+    Cookie HTTP state management HTTP状态管理
+    xmlrpclib XML_RPC client access XML-RPC客户端访问
+    SimpleXMLRPCServer basic XML-RPC server 基础的XML-RPC服务器
+    DocXMLRPCServer self-documenting XML-RPC server 自记录的 XML-RPC服务器
+    
+Multimedia services #多媒体服务
+    audioop manipulate raw audio data
+    imageop manipulate raw image data
+    aifc read and write AIFF and AIFC files
+    sunau read and write sun au files
+    wave read and write WAV files
+    chunk   read IFF chunked data
+    colorsys conversions between color systems 颜色系统之间的转换
+    imghdr determine the type of an image
+    sndhdr determine type of sound file
+    ossaudiodev access to OSS-compatible audio devices
+
+internationalization
+    gettext MUltilingual internationalization services 多语言国际化服务
+    locale internationalization services
+    
+program frameworks
+    cmd support for line-oriented command interpreters 支持面向行的命令解释器
+    shlex simple lexical analysis 简单的词汇分析
+
+graphical user interfaces with Tk  #图形用户接口
+    Tkinter python interface to Tcl/Tk
+    ttk Tk themed widgets
+    Tix extension widgets for Tk
+    ScrolledText Scrolled Text Widget
+    turtle Turtle graphics for Tk
+    IDLE
+    
+development Tools
+    pydoc Documentation generator and online help system 文档生成和在线帮助系统
+    doctest Test interactive python examples 测试交互的python例子
+    unittest Unit testing framework 单元测试框架
+    2to3 automated python 2 to 3 code translation python2代码自动转python3
+    test regression tests packages for python 回归测试包
+    test.support utility functions for tests tests的实用函数
+
+debugging and profiling
+    bdb debugger framework
+    pdb the python debugger
+    hotshot high performance logging profiler 高性能logging分析器
+    timeit measure execution time of small code snippets 测量代码段执行时间
+    trace trace or track python statement execution 追踪python执行状态
+    
+software packaging and distribution
+    distutils building and installing python modules
+    ensurepip bootstrapping the pip installer
+
+python runtime services
+    sys system-specific parameters and functions 系统特定参数和函数
+    sysconfig provide access to python's configuration information 提供访问python的配置信息
+    __builtin__ built-in objects 内建对象
+    future_builtins python3 builtins
+    __main__ top-level script environment 顶级脚本环境
+    warnings warning control 预警控制
+    contextlib utilities for with-statement contexts with语句上下文工具
+    abc abstract base classes 抽象基类
+    atexit exit handlers 退出操作
+    traceback print or retrieve a stack traceback 打印或检索一个栈追踪
+    __futrue__ futrue statement definitions 
+    gc garbage collector interface 垃圾回收器接口
+    inspect inspect live objects 检查活动对象
+    site site-specific configuration hook 
+    user user-specific configuration hook
+    fpectl floating point exception control 浮点异常控制
+
+custom python interpreters
+    code interpreter base classes 解释器基类
+    codeop compile python code 编译python代码
+
+restricted execution
+    rexec restricted execution framework 限制执行
+    bastion restricting access to objects 限制访问对象
+
+importing modules 导入模块
+    imp access the import internals
+    importlib convenience wrappers for __import__()
+    imputil import utilities
+    zipimport import modules from zip archives
+    pkgutil pachage extension utility
+    modulefinder find modules used by a script
+    runpy locating and executing python modules 定位和执行python模块
+
+python language services
+    parser access python parse trees
+    ast abstract syntax trees
+    symtable
+    symbol
+    token
+    keyword
+    tokenize
+    tabnany
+    pyclbr
+    py_compile
+    dis
+    pickletools
+
+python compiler package
+
+miscellaneous services
+    formatter generic output formatting
+
+unix specific services
+    posix the most common POSIX system calls 通用的POSIX系统调用
+    pwd the password database 密码数据库
+    spwd the shadow password database shadow密码数据库
+    grp the group database
+    crypt function to check unix passwords
+    dl call C functions in shared objects
+    termios POSIX style tty control
+    tty terminal control functions
+    pty pseudo-ternimal utilities  伪终端工具
+    fcntl the fcntl and ioctl system calls
+    pipes interface to shell pipelines
+    posixfile file-like objects with locking support 文件类型的对象，支持锁
+    resource resource usage information 
+    nis interface to sun's NIS
+    syslog unix syslog library routines
+    commands utilities for running commands

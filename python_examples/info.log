@@ -1,0 +1,3 @@
+2018-09-18 15:42:59,559 - WARNING logging_example.py [line:50] info message.
+2018-09-18 15:43:16,583 - WARNING logging_example.py [line:50] info message.
+2018-09-18 15:43:26,970 - WARNING logging_example.py [line:50] info message.
