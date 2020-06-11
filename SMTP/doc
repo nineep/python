@@ -1,0 +1,11 @@
+##发件：
+smtplib: SMTP客户端，负责通过smtpd发送邮件  
+email： 负责构造邮件   
+
+##中转：
+smtpd: SMTP server  
+aiosmtpd: 异步SMTP server
+
+##收件：
+poplib: 收件协议库   
+imaplib：交互式收件协议库
