@@ -8,7 +8,7 @@ from email.header import Header
 # qq SMTP server
 mail_host = 'smtp.qq.com'
 mail_user = 'nineep@qq.com'
-mail_pass = 'tlysudsegzspbead' #在qq邮箱 设置-账户-生成授权码，作为密码
+mail_pass = '' #在qq邮箱 设置-账户-生成授权码，作为密码
 
 sender = 'nineep@qq.com'
 receivers = ['nineep@qq.com']
