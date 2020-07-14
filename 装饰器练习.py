@@ -20,3 +20,35 @@ def cal(l):
 
 res =  cal(range(20))
 print(res)
+
+# 普通装饰器
+def wrapper(func):
+    def inner():
+        print('1')
+        func()
+        print('2')
+    return inner
+
+@wrapper
+def func():
+    print('被装饰的函数')
+
+func()
+
+
+# 带参数装饰器
+# 使用wraps装饰func，私有__doc__,__name__魔法
+from functools import wraps
+def func2(func):
+    @wraps(func)
+    def inner(*args, **kwargs):
+        print('我是装饰器')
+        ret = func(*args, **kwargs)
+        return ret
+    return inner
+
+@func2
+def func1(*args, **kwargs):
+    print('我被装饰')
+
+func1()
