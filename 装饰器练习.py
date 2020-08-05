@@ -52,3 +52,18 @@ def func1(*args, **kwargs):
     print('我被装饰')
 
 func1()
+
+# 带不定长参数的装饰器
+def new_func(func):
+    def wrappedfun(*args, **kwargs):
+        print('我是不定长参数：', args, kwargs)
+        if args and kwargs:
+            print(len(args), len(kwargs))
+        func()
+    return wrappedfun
+
+@new_func
+def test():
+    print('开始测试')
+
+test('haha', 'hehe', {1:'xixi'}, k1='heihei', k2='wuwu')
